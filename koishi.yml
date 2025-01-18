@@ -1,0 +1,80 @@
+plugins:
+  group:server:
+    server:egl139:
+      port: 5140
+      maxPort: 5149
+    ~server-satori:8z02uf: {}
+    ~server-temp:vz70vo: {}
+  group:basic:
+    ~admin:1vzocj: {}
+    ~bind:p3zfuo: {}
+    commands:2dauto: {}
+    help:372jxz: {}
+    http:qcp6hl: {}
+    ~inspect:oits98: {}
+    locales:n6xdrx: {}
+    proxy-agent:80oeep: {}
+    rate-limit:j8fhd0: {}
+    telemetry:7fn8xg: {}
+  group:console:
+    actions:pe09mx: {}
+    analytics:rptjlh: {}
+    android:al65m4:
+      $if: env.KOISHI_AGENT?.includes('Android')
+    ~auth:hceki1: {}
+    config:9mrvzb: {}
+    console:lqjgzp:
+      open: true
+    dataview:opkz7t: {}
+    desktop:x482a4:
+      $if: env.KOISHI_AGENT?.includes('Desktop')
+    explorer:qrj4ez: {}
+    logger:069tu3: {}
+    insight:outo02: {}
+    market:hm4wal:
+      search:
+        endpoint: https://registry.koishi.chat/index.json
+    notifier:6bqwoi: {}
+    oobe:19qtc3: {}
+    sandbox:cqheoe: {}
+    status:aikhl2: {}
+    theme-vanilla:izz7wp: {}
+  group:storage:
+    ~database-mongo:xrv0ph:
+      database: koishi
+    ~database-mysql:6xep80:
+      database: koishi
+    ~database-postgres:fs5if9:
+      database: koishi
+    database-sqlite:3b52ti:
+      path: data/koishi.db
+    assets-local:3xm0al: {}
+  group:adapter:
+    ~adapter-dingtalk:148i0u: {}
+    ~adapter-discord:skl935: {}
+    ~adapter-kook:d96atb: {}
+    ~adapter-lark:sa4dhm: {}
+    ~adapter-line:v5otgo: {}
+    ~adapter-mail:00fvuz: {}
+    ~adapter-matrix:fx8s28: {}
+    ~adapter-qq:odagxl: {}
+    ~adapter-satori:9715sv: {}
+    ~adapter-slack:43dglx: {}
+    ~adapter-telegram:cf81bl: {}
+    ~adapter-wechat-official:d2r8c6: {}
+    ~adapter-wecom:h9dslb: {}
+    ~adapter-whatsapp:j4q7gw: {}
+    ~adapter-zulip:yt3ohy: {}
+  group:develop:
+    $if: env.NODE_ENV === 'development'
+    hmr:n0ztqk:
+      root: .
+  csd-oj:8j3uzr:
+    baseUrl: https://oj.dsstudio.tech/api
+    cookie: >-
+      _ga=GA1.2.824639388.1697961349;
+      csrftoken=ELLR9MeDT1t0gbC0lg5V1euFuIzAKHaphVxUsxPpSgHFwN8tQIkPHbzxobSwKxMk;
+      _gid=GA1.2.1024144709.1737221071; _gat=1;
+      _ga_59QEB25NR7=GS1.2.1737221071.73.1.1737221088.0.0.0
+    token: ELLR9MeDT1t0gbC0lg5V1euFuIzAKHaphVxUsxPpSgHFwN8tQIkPHbzxobSwKxMk
+    since: 0

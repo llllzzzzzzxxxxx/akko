@@ -1,0 +1,27 @@
+commands:
+  today:
+    no-enough-submissions: 今天还没有足够的提交数据哦！
+    error-command: 这个命令暂时还没什么用！
+
+    subrank:
+      messages:
+        no-enough-user: 今天提交的人还很少，请稍后再来叭~
+        subrank: "这是今天的提交数排名，继续保持就更好了！\n{0}"
+
+    subking:
+      messages:
+        subking: "毫无疑问，当下的“提交之王”是「{0}」！今天之内他一共提交了 {1} 次，AC 了 {2} 次。而他最喜欢使用的语言是 {3}！"
+
+    acrank:
+      messages:
+        no-enough-user: 今天提交的人还很少，请稍后再来叭~
+        acrank: "这是今天的 AC 数排名，继续保持就更好了！\n{0}"
+
+    acking:
+      messages:
+        acking: "我宣布！第 {0} 次获得“AC 之王”称号的人是「{1}」！今天之内他一共 AC 了 {2} 次，而只提交了 {3} 次！他最喜欢使用的语言是 {4}。"
+
+  rank:
+    messages:
+      rank: "这是今年截止目前的 OJ 排名信息，不代表最终考核成绩，请继续加油！\n{0}"
+      no-contest-found: "找不到对应的比赛，现在的比赛有这些：\n{0}"
